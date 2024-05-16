@@ -1,0 +1,30 @@
+.button {
+    padding: 15px 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100px;
+    font-size: 18px;
+
+    transition: all 200ms linear;
+}
+
+.button--black {
+    background-color: $black;
+    color: white;
+
+    &:hover {
+        background-color: lighten($black, 10);
+    }
+}
+
+.button--purple {
+    background-color: rgba(#4629f2, 0.8);
+    color: white;
+
+    &:hover {
+        background-color: darken(rgba(#4629f2, 0.8), 20);
+    }
+}

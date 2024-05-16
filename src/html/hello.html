@@ -1,0 +1,25 @@
+<div class="hello">
+    <div class="_Container">
+        @@include('header.html' {})
+        <img src="../images/hello.png" alt="Background" class="hello_background" />
+
+        <div class="hello_info">
+            <div class="hello_info_left">
+                <h1 class="hello_title">Improve your customer experience with real-time assistance</h1>
+                <p class="hello_text">
+                    Our live chat software helps you connect with your customers instantly, boosting sales and improving customer satisfaction. Try it out today
+                    and see the difference it can make for your business.
+                </p>
+                <div class="hello_buttons">
+                    <button class="button button--black">Get Started</button>
+                    <button class="button button--purple">
+                        <img src="../images/triangle.png" alt="Triangle" class="hello_button_image" />
+                        See in Action
+                    </button>
+                </div>
+            </div>
+
+            <div class="hello_info_right">@@include('chat.html' {})</div>
+        </div>
+    </div>
+</div>

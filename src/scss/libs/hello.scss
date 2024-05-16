@@ -1,0 +1,58 @@
+.hello {
+    height: 800px;
+
+    position: relative;
+
+    .hello_background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+.hello_info {
+    width: 100%;
+    display: flex;
+}
+
+.hello_info_left {
+    width: 60%;
+
+    & > *:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
+
+.hello_info_right {
+    width: 40%;
+}
+
+.hello_title {
+    font-weight: 700;
+    font-size: 56px;
+    color: white;
+    line-height: 70px;
+}
+
+.hello_text {
+    color: rgba(white, 0.6);
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.hello_button_image {
+    width: 14px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.hello_buttons {
+    display: flex;
+    & > *:not(:last-child) {
+        margin-right: 15px;
+    }
+}

@@ -1,30 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+    @@include('html/head.html', { "title": "ChatFlow" })
 
-    @@include('html/head.html', {
-        "title": "ChatFlow"
-    })
+    <body>
+        <!-- Structure -->
 
-<body>
+        <div class="page">
+            <main class="main">@@include('html/hello.html' {})</main>
 
-    <!-- Structure -->
+            @@include('html/footer.html' {})
+        </div>
 
-    <div class="page">
-
-        @@include('html/header.html' {})
-
-
-        <main class="main">
-
-        </main>
-        
-        
-        @@include('html/footer.html' {})
-
-    </div>
-    
-    <script src="js/app.min.js"></script>
-</body>
-
+        <script src="js/app.min.js"></script>
+    </body>
 </html>
-
