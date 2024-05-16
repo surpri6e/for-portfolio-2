@@ -1,0 +1,51 @@
+//! It's the start file
+@import 'nulls';
+@import 'vars';
+@import 'mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet');
+
+//! Base styles for site
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    width: 100%;
+    position: fixed;
+}
+
+body {
+    background-color: white;
+    height: 100%;
+    color: rgba($black, 0.6);
+    overflow-x: hidden;
+    width: 100%;
+    position: fixed;
+}
+
+.page {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 400;
+    font-family: 'Source Sans 3', sans-serif;
+    line-height: 1;
+}
+
+._Container {
+    height: 100%;
+    max-width: $widthContainer;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+//? Blocks site
+@import './libs/header';
+@import './libs/footer';
