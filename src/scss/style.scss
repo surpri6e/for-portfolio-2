@@ -33,7 +33,7 @@ body {
 
     font-weight: 400;
     font-family: 'Source Sans 3', sans-serif;
-    line-height: 1;
+    line-height: 26px;
 }
 
 ._Ibg {
@@ -65,3 +65,6 @@ body {
 @import './libs/footer';
 
 @import './libs/hello.scss';
+@import './libs/chat.scss';
+@import './libs/nav.scss';
+@import './libs/features.scss';

@@ -1,0 +1,23 @@
+.nav_list {
+    display: flex;
+
+    & > *:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+.nav_element {
+    color: rgba(white, 0.6);
+    display: flex;
+    align-items: center;
+
+    &--active {
+        color: white;
+        font-weight: 500;
+    }
+
+    transition: all 200ms linear;
+}
+
+.nav_link {
+    color: inherit;
+}

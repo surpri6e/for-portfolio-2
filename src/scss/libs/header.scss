@@ -1,4 +1,50 @@
 .header {
     width: 100%;
-    padding: 50px 0 90px 0;
+    padding-bottom: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+}
+
+.header_right {
+    display: flex;
+    & > *:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.header_logo {
+    margin-right: 80px;
+
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.header_button {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+    color: white;
+}
+
+.header_button--purple {
+    color: $black;
+    padding: 8px 20px;
+    background-color: rgba(white, 0.55);
+    border-radius: 6px;
+
+    transition: all 200ms linear;
+
+    &:hover {
+        background-color: darken(rgba(white, 0.55), 10);
+    }
 }
