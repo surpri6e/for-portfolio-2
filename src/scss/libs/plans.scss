@@ -20,3 +20,125 @@
 .plans_title {
     margin-bottom: 30px;
 }
+
+.plans_cards {
+    display: flex;
+    width: 100%;
+}
+
+.plans_card {
+    width: calc(33.33% - 30px);
+    margin: 0 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(black, 0.1);
+}
+
+.plans_card_header {
+    border-radius: 10px 10px 0 0;
+    color: white;
+    background-color: $purple;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+    height: 48px;
+
+    &--yellow {
+        background-color: #f5ac76;
+    }
+
+    &--pink {
+        background-color: #ff5391;
+    }
+}
+
+.plans_card_body {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    height: calc(100% - 48px);
+    justify-content: space-between;
+}
+
+.plans_cost {
+    font-size: 32px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: $black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(black, 0.05);
+}
+
+.plans_list {
+    padding: 20px 0;
+}
+
+.plans_list_element {
+    display: flex;
+    align-items: center;
+
+    & > *:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}
+
+.plans_list_image {
+    width: 20px;
+    height: 20px;
+}
+
+.plans_list_link {
+    color: inherit;
+}
+
+.plans_button {
+    background-color: $purple;
+    color: white;
+    height: 42px;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+
+    transition: all 200ms linear;
+
+    &:hover {
+        background-color: darken($purple, 20);
+    }
+
+    &--yellow {
+        background-color: #f5ac76;
+        &:hover {
+            background-color: darken(#f5ac76, 20);
+        }
+    }
+
+    &--pink {
+        background-color: #ff5391;
+        &:hover {
+            background-color: darken(#ff5391, 20);
+        }
+    }
+}
