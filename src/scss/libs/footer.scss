@@ -1,0 +1,80 @@
+.footer {
+    padding: 50px 0px;
+}
+
+.footer_body {
+    display: flex;
+    flex-direction: column;
+
+    & > *:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.footer_login {
+    display: flex;
+    width: 100%;
+}
+
+.footer_login_left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    & > *:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+.footer_login_right {
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_login_title {
+    font-size: 24px;
+}
+
+.footer_lists {
+    padding: 50px 0 20px 0;
+    border-top: 1px solid rgba($black, 0.03);
+    border-bottom: 1px solid rgba($black, 0.03);
+
+    display: flex;
+
+    & > *:not(:last-child) {
+        margin-right: 120px;
+    }
+}
+
+.footer_block {
+}
+.footer_list_title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.footer_list {
+}
+.footer_list_element {
+    color: rgba($black, 0.8);
+}
+.footer_list_link {
+    color: inherit;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer_last {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba($black, 0.4);
+    text-align: center;
+}

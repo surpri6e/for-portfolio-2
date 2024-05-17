@@ -1,0 +1,22 @@
+.plans {
+    padding: 100px 0px;
+}
+
+.plans_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > *:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+
+.plans_header {
+    width: 700px;
+    text-align: center;
+}
+
+.plans_title {
+    margin-bottom: 30px;
+}
