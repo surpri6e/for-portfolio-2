@@ -22,6 +22,8 @@
 .hello_info_left {
     width: 60%;
 
+    padding-right: 50px;
+
     & > *:not(:last-child) {
         margin-bottom: 25px;
     }

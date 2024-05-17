@@ -1,28 +1,70 @@
 .orange {
-    height: 800px;
     width: 100%;
     background: linear-gradient(45deg, #f5ac76, #fecb7f);
+    padding: 50px 0px;
 }
 
 .orange_body {
+    display: flex;
+    width: 100%;
 }
 .orange_left {
-}
-.orange_header {
-}
-.orange_title {
-}
-.orange_button {
-}
-.button--black {
-}
-.orange_info {
-}
-.orange_block {
-}
-.orange_block_title {
-}
-.orange_block_text {
+    width: 60%;
+
+    padding-left: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & > *:not(:last-child) {
+        margin-bottom: 25px;
+    }
 }
 .orange_right {
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.orange_header {
+    p {
+        width: 70%;
+    }
+}
+
+.orange_button {
+    width: 100%;
+}
+
+.orange_info {
+    width: 100%;
+    display: flex;
+
+    & > *:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+.orange_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.orange_block_title {
+    margin-bottom: 15px;
+    color: $black;
+    font-weight: 600;
+}
+
+.orange_block_text {
+    font-size: 14px;
 }
