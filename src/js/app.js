@@ -11,3 +11,18 @@ navigation.forEach((element, ind) =>
         navigation[ind].classList.add('nav_element--active');
     }),
 );
+
+const burger = document.querySelector('.burger');
+
+let isMenuActive = false;
+
+burger.addEventListener('click', () => {
+    if (isMenuActive) {
+        document.body.style.overflow = 'auto';
+        isMenuActive = !isMenuActive;
+        return;
+    }
+
+    document.body.style.overflow = 'hidden';
+    isMenuActive = !isMenuActive;
+});

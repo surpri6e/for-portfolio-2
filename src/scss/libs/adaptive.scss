@@ -75,6 +75,15 @@
         width: 100%;
         justify-content: start;
     }
+
+    .nav_list,
+    .header_right > button {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 630px) {
