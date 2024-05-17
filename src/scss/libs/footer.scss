@@ -43,14 +43,15 @@
     border-bottom: 1px solid rgba($black, 0.03);
 
     display: flex;
-
-    & > *:not(:last-child) {
-        margin-right: 120px;
-    }
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer_block {
+    padding: 0 15px;
+    margin-bottom: 15px;
 }
+
 .footer_list_title {
     text-transform: uppercase;
     font-size: 14px;
@@ -58,8 +59,7 @@
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
-.footer_list {
-}
+
 .footer_list_element {
     color: rgba($black, 0.8);
 }

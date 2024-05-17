@@ -24,6 +24,7 @@
 .plans_cards {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .plans_card {

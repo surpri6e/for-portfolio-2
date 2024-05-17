@@ -36,3 +36,9 @@
     color: $black;
     line-height: 54px;
 }
+
+@media screen and (max-width: 700px) {
+    .global_title {
+        font-size: 28px;
+    }
+}

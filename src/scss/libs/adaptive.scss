@@ -1,0 +1,128 @@
+@media screen and (max-width: 930px) {
+    .features_card {
+        width: 50%;
+    }
+
+    .orange_right {
+        display: none;
+    }
+    .orange_left {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .plans_card {
+        width: 100%;
+        margin: 0;
+    }
+
+    .plans_cards {
+        flex-direction: column;
+
+        & > *:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .features_header,
+    .plans_header {
+        width: 400px;
+    }
+
+    .hello_info {
+        flex-direction: column;
+    }
+
+    .hello_info_left {
+        width: 100%;
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .hello_info_right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .chat_text_right {
+        background-color: darken($purple, 20);
+    }
+
+    .chat {
+        width: 70%;
+    }
+
+    .footer_block {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .footer_login {
+        flex-direction: column;
+    }
+
+    .footer_login_left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer_login_right {
+        width: 100%;
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .features_card {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .features_header,
+    .plans_header {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .orange_info {
+        flex-direction: column;
+
+        & > *:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    .orange_block {
+        width: 100%;
+    }
+
+    .hello_title {
+        font-size: 38px;
+        line-height: 42px;
+    }
+
+    .hello_text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .chat {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .hello_buttons {
+        flex-direction: column;
+
+        & > *:not(:last-child) {
+            margin-right: 0px;
+            margin-bottom: 10px;
+        }
+    }
+}
